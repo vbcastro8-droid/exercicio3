@@ -1,3 +1,3 @@
-# implementacaovsgit
-Criei esse repositório seguindo o passo a passo do PDF  VsCodeGitHUb
+# Exercício 3 - Formulário de Cadastro
+Projeto desenvolvido para a disciplina de Programação Web - Profa. Marta.
 
