@@ -6,35 +6,74 @@
     <title>Cadastro</title>
 </head>
 <body>
+
     <div>
         <div>
             <form action="index.html" method="post">
+
                 <h1>Cadastrar usuário</h1>
 
+                <!-- Dados pessoais -->
                 <fieldset>
-                    <legend>1 Dados pessoais</legend>
-                    
-                    <label>Nome:</label>
-                    <input type="text" name="nome"> <label>Email:</label>
-                    <input type="email" name="email"> <label>Senha:</label>
-                    <input type="password" name="senha"> <label>Confirma senha:</label>
-                    <input type="password" name="confirma_senha"> <p>Idade:</p>
-                    <input type="radio" name="idade" value="acima17"> Acima 17 <input type="radio" name="idade" value="abaixo17"> Abaixo ou igual 17 </fieldset>
+                    <legend>1. Dados pessoais</legend>
 
-                <fieldset>
-                    <legend>2 Perfil</legend>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome"><br><br>
 
-                    <label>Descrição:</label>
-                    <textarea name="descricao"></textarea> <label>Perfil trabalho:</label>
-                    <select name="perfil_trabalho"> <option value="frontend">Front End Developer</option>
-                    </select>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
 
-                    <label>Interesses:</label>
-                    <input type="checkbox" name="interesses" value="programador"> Programador <input type="checkbox" name="interesses" value="design"> Design <input type="checkbox" name="interesses" value="analista"> Analista </fieldset>
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" id="senha" name="senha"><br><br>
+
+                    <label for="confirma_senha">Confirmar senha:</label><br>
+                    <input type="password" id="confirma_senha" name="confirma_senha"><br><br>
+
+                    <p>Idade:</p>
+                    <input type="radio" id="acima17" name="idade" value="acima17">
+                    <label for="acima17">Acima de 17</label><br>
+
+                    <input type="radio" id="abaixo17" name="idade" value="abaixo17">
+                    <label for="abaixo17">17 ou menos</label>
+                </fieldset>
 
                 <br>
-                <button type="submit">Enviar dados</button> </form>
+
+                <!-- Perfil -->
+                <fieldset>
+                    <legend>2. Perfil</legend>
+
+                    <label for="descricao">Descrição:</label><br>
+                    <textarea id="descricao" name="descricao" rows="4" cols="40"></textarea><br><br>
+
+                    <label for="perfil_trabalho">Perfil de trabalho:</label><br>
+                    <select id="perfil_trabalho" name="perfil_trabalho">
+                        <option value="frontend">Front End Developer</option>
+                        <option value="backend">Back End Developer</option>
+                        <option value="fullstack">Full Stack Developer</option>
+                    </select><br><br>
+
+                    <p>Interesses:</p>
+                    <input type="checkbox" id="programador" name="interesses[]" value="programador">
+                    <label for="programador">Programador</label><br>
+
+                    <input type="checkbox" id="design" name="interesses[]" value="design">
+                    <label for="design">Design</label><br>
+
+                    <input type="checkbox" id="analista" name="interesses[]" value="analista">
+                    <label for="analista">Analista</label>
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Enviar dados</button>
+
+            </form>
         </div>
     </div>
+
 </body>
 </html>
+
+
+
